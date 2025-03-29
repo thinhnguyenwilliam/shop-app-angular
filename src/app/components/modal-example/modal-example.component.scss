@@ -1,0 +1,43 @@
+::ng-deep .mat-mdc-dialog-container {
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2.mat-mdc-dialog-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #6200ea;
+    padding-bottom: 10px;
+}
+
+.mat-mdc-dialog-content {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    padding: 20px;
+}
+
+.mat-mdc-dialog-actions {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+button {
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+button.mat-mdc-button {
+    background-color: #6200ea;
+    color: white;
+}
+
+button.mat-mdc-button:hover {
+    background-color: #3700b3;
+}
