@@ -1,0 +1,99 @@
+.intro-section {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product-category {
+    width: 200px;
+}
+
+.search-input {
+    width: 300px;
+    margin-right: 10px;
+    background-color: rgb(19, 23, 42);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.form-control {
+    background-color: transparent;
+    color: white;
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.product-item {
+    background-color: rgb(13, 43, 189);
+    border: 1px solid rgb(135, 142, 180);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+$product-bg: rgb(19, 23, 42);
+$product-border: rgb(35, 39, 61);
+$text-primary: white;
+$text-secondary: rgb(173, 178, 203);
+$text-highlight: rgb(242, 126, 212);
+
+.product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    color: $text-primary;
+}
+
+.product-description {
+    color: $text-secondary;
+}
+
+.product-warranty {
+    color: $text-highlight;
+}
+
+.product-price {
+    color: $text-primary;
+}
+
+.product-rating {
+    color: yellow;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.product-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.space-x {
+    margin: 0 5px;
+    /*top,right,bottom,left==> top and right */
+}
