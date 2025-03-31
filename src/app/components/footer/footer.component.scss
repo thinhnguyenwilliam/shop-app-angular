@@ -1,0 +1,17 @@
+.footer {
+    background-color: #719ecc !important;
+    /* Dark background */
+    color: #adb6c7;
+    /* Soft gray text */
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: rgb(143, 17, 17) !important;
+}

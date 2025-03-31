@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-//import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormComponent } from './components/form/form.component';
@@ -12,7 +12,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TestTranslateComponent } from './components/test-translate/test-translate.component';
 import { NgChartsModule } from 'ng2-charts'; // ✅ In Angular 16.1.3
-import { TestChartComponent } from './components/test-chart/test-chart.component'; 
+import { TestChartComponent } from './components/test-chart/test-chart.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -24,13 +26,15 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    //HomeComponent,
+    HomeComponent,
     //TestApiComponent,
     //ModalExampleComponent,
     //TestModalComponent,
     FormComponent,
     TestTranslateComponent,
-    TestChartComponent
+    TestChartComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -48,12 +52,14 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   providers: [],
   bootstrap: [
-    //HomeComponent,
-    FormComponent,
+    HomeComponent,
+    //FormComponent,
     //TestApiComponent,
     //TestModalComponent,
-    TestTranslateComponent,
-    TestChartComponent
+    //TestTranslateComponent,
+    //TestChartComponent,
+    NavbarComponent,
+    FooterComponent
   ]
 })
 export class AppModule { }
