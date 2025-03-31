@@ -11,6 +11,9 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TestTranslateComponent } from './components/test-translate/test-translate.component';
+import { NgChartsModule } from 'ng2-charts'; // ✅ In Angular 16.1.3
+import { TestChartComponent } from './components/test-chart/test-chart.component'; 
+
 
 
 // Function to load translations
@@ -26,7 +29,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     //ModalExampleComponent,
     //TestModalComponent,
     FormComponent,
-    TestTranslateComponent
+    TestTranslateComponent,
+    TestChartComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [
@@ -47,7 +52,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormComponent,
     //TestApiComponent,
     //TestModalComponent,
-    TestTranslateComponent
+    TestTranslateComponent,
+    TestChartComponent
   ]
 })
 export class AppModule { }
