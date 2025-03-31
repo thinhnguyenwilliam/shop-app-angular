@@ -1,0 +1,7 @@
+<h2>{{ 'WELCOME' | translate }}</h2>
+
+<label for="language">{{ 'LANGUAGE' | translate }}:</label>
+<select id="language" (change)="switchLanguage($event)">
+    <option value="en">English</option>
+    <option value="vi">Tiếng Việt</option>
+</select>

@@ -24,4 +24,11 @@ export class FormComponent {
       console.log('Form is invalid');
     }
   }
+
+  handleClick(event: Event) {
+    event.preventDefault();
+    console.log("Anchor clicked!");
+  }
+
+
 }
