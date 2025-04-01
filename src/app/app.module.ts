@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormComponent } from './components/form/form.component';
 //import { TestApiComponent } from './components/test-api/test-api.component';
@@ -15,7 +16,13 @@ import { NgChartsModule } from 'ng2-charts'; // ✅ In Angular 16.1.3
 import { TestChartComponent } from './components/test-chart/test-chart.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { ColorPickerComponent } from './components/color-picker/color-picker.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { UserTableComponent } from './components/user-table/user-table.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import  { MatInputModule } from '@angular/material/input';
 
 
 // Function to load translations
@@ -34,11 +41,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     TestTranslateComponent,
     TestChartComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ColorPickerComponent,
+    UserTableComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     MatDialogModule,
     TranslateModule.forRoot({
@@ -49,6 +59,11 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     NgChartsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatInputModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [
@@ -58,8 +73,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     //TestModalComponent,
     //TestTranslateComponent,
     //TestChartComponent,
-    NavbarComponent,
-    FooterComponent
+    //NavbarComponent,
+    //FooterComponent
   ]
 })
 export class AppModule { }

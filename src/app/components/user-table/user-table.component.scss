@@ -1,0 +1,47 @@
+// Table Container
+table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// Table Header
+.mat-header-cell {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 16px;
+}
+
+// Table Rows
+.mat-row,
+.mat-header-row {
+    height: 56px;
+}
+
+// Table Cells
+.mat-cell {
+    padding: 16px;
+    font-size: 14px;
+    color: #333;
+}
+
+// Hover Effect
+.mat-row:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+// Search Input
+mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+// Paginator
+.mat-paginator {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
