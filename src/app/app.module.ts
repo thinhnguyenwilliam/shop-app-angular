@@ -26,7 +26,10 @@ import  { MatInputModule } from '@angular/material/input';
 import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AosComponent } from './components/aos/aos.component';
-
+import { ImageUploadComponent } from './components/image-upload/image-upload.component';
+import { ImageUploadTwoComponent } from './components/image-upload-two/image-upload-two.component';
+import { ImageDialogComponent } from './components/image-dialog/image-dialog.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 // Function to load translations
@@ -49,7 +52,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     ColorPickerComponent,
     UserTableComponent,
     SkeletonLoaderComponent,
-    AosComponent
+    AosComponent,
+    ImageUploadComponent,
+    ImageUploadTwoComponent,
+    ImageDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +76,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatSortModule,
     MatInputModule,
     BrowserAnimationsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatDialogModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [

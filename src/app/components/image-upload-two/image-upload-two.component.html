@@ -1,0 +1,13 @@
+<div class="image-container">
+  <input type="file" (change)="onFileSelected($event)" accept="image/*">
+
+  <!-- Eye Icon with Image Preview -->
+  <button class="preview-wrapper" *ngIf="imagePreview" (click)="openDialog()" (keydown)="onKeyDown($event)"
+    type="button" aria-label="Preview Image">
+    <!-- Eye Icon -->
+    <mat-icon class="eye-icon">visibility</mat-icon>
+
+    <!-- Image Preview -->
+    <img [src]="imagePreview" alt="Preview">
+  </button>
+</div>

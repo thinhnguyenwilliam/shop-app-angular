@@ -1,0 +1,7 @@
+<h2 mat-dialog-title>Image Preview</h2>
+<mat-dialog-content class="dialog-content">
+  <img [src]="data.imageSrc" alt="Preview" class="zoomable" (wheel)="zoomImage($event)">
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Close</button>
+</mat-dialog-actions>

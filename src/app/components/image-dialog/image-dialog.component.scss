@@ -1,0 +1,13 @@
+.dialog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.zoomable {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    cursor: grab;
+}
