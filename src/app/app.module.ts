@@ -23,6 +23,10 @@ import { MatSortModule } from '@angular/material/sort';
 import { UserTableComponent } from './components/user-table/user-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import  { MatInputModule } from '@angular/material/input';
+import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { AosComponent } from './components/aos/aos.component';
+
 
 
 // Function to load translations
@@ -43,7 +47,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     FooterComponent,
     ColorPickerComponent,
-    UserTableComponent
+    UserTableComponent,
+    SkeletonLoaderComponent,
+    AosComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +69,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatPaginatorModule,
     MatSortModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [

@@ -1,0 +1,16 @@
+<div *ngIf="isLoading; else content">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    
+    <div class="skeleton">
+      <div class="skeleton-item"></div>
+      <div class="skeleton-item"></div>
+      <div class="skeleton-item"></div>
+    </div>
+  </div>
+  
+  <!-- Actual Content -->
+  <ng-template #content>
+    <h2>Data Loaded</h2>
+    <p>This is the actual content after loading...</p>
+  </ng-template>
+  
