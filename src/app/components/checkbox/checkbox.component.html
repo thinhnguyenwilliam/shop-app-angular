@@ -1,0 +1,16 @@
+<div>
+  <label>
+    <input type="checkbox" (change)="onRoleChange($event)" />
+    Select All Permissions
+  </label>
+
+  <div *ngFor="let permission of permissionOptions">
+    <label>
+      <input type="checkbox" [checked]="isPermissionSelected(permission.id)"
+        (change)="onPermissionChange($event, permission.id)" />
+      {{ permission.label }}
+    </label>
+  </div>
+
+  <button (click)="handleSubmit()">Submit</button>
+</div>

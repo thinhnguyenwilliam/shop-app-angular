@@ -29,6 +29,7 @@ import { ImageUploadComponent } from './components/image-upload/image-upload.com
 import { ImageUploadTwoComponent } from './components/image-upload-two/image-upload-two.component';
 import { ImageDialogComponent } from './components/image-dialog/image-dialog.component';
 import { MatIconModule } from '@angular/material/icon';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 
 // Function to load translations
@@ -54,7 +55,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AosComponent,
     ImageUploadComponent,
     ImageUploadTwoComponent,
-    ImageDialogComponent
+    ImageDialogComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
